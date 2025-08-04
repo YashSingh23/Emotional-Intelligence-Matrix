@@ -1,4 +1,6 @@
-The Emotional Intelligence Matrix: A Real-Time Assessment Tool
+# **The Emotional Intelligence Matrix: A Real-Time Assessment Tool**
+
+
 This project is a proof-of-concept implementation of "The Emotional Intelligence Matrix," a novel framework designed to assess Emotional Intelligence (EI) in real-time. It combines machine learning for facial emotion recognition with an AI-powered adaptive questioning system to generate a comprehensive personality and emotional profile.
 
 
@@ -7,156 +9,155 @@ The application, built with Streamlit, uses a webcam to analyze a user's facial 
 
 
 
-📋 Key Features
+## 📋 Key Features
 
-Real-Time Emotion Detection: Utilizes OpenCV and DeepFace to capture and analyze live video from a webcam, identifying emotions like happiness, sadness, anger, and surprise.
-
-
+* Real-Time Emotion Detection: Utilizes OpenCV and DeepFace to capture and analyze live video from a webcam, identifying emotions like happiness, sadness, anger, and surprise.
 
 
-AI-Powered Adaptive Questioning: Employs a GPT-2 language model to dynamically generate workplace-related questions based on the user's detected emotional state.
 
 
-Comprehensive EQ Profile: After the session, it calculates an overall EQ score and breaks it down into key dimensions based on established psychological models.
+* AI-Powered Adaptive Questioning: Employs a GPT-2 language model to dynamically generate workplace-related questions based on the user's detected emotional state.
 
-Interactive Visualizations: Displays the user's EQ profile through an intuitive radar chart and a pie chart for easy interpretation of strengths and areas for development.
 
-Detailed Analysis & Feedback: Provides AI-generated analysis for each EQ dimension, offering strengths, development areas, and practical improvement strategies.
+* Comprehensive EQ Profile: After the session, it calculates an overall EQ score and breaks it down into key dimensions based on established psychological models.
 
-Emotion History Logging: Tracks and plots the user's detected emotions over the course of the session.
+* Interactive Visualizations: Displays the user's EQ profile through an intuitive radar chart and a pie chart for easy interpretation of strengths and areas for development.
 
-🧠 Theoretical Framework
+* Detailed Analysis & Feedback: Provides AI-generated analysis for each EQ dimension, offering strengths, development areas, and practical improvement strategies.
+
+* Emotion History Logging: Tracks and plots the user's detected emotions over the course of the session.
+
+## 🧠 Theoretical Framework
+
 The system's methodology is grounded in five prominent and widely recognized Emotional Intelligence (EI) models, ensuring a robust and multi-faceted assessment.
 
 
 
 
-Goleman's EI Model: Focuses on self-awareness, self-regulation, motivation, empathy, and social skills as critical competencies for leadership and success.
+* **Goleman's EI Model:** Focuses on self-awareness, self-regulation, motivation, empathy, and social skills as critical competencies for leadership and success.
 
 
 
-Mayer-Salovey-Caruso EI Model: Defines EI as a cognitive ability to perceive, understand, and manage emotions effectively.
+* **Mayer-Salovey-Caruso EI Model:** Defines EI as a cognitive ability to perceive, understand, and manage emotions effectively.
 
 
 
-Bar-On's Emotional-Social Intelligence (ESI) Model: Integrates emotional and social dimensions, including stress management and adaptability, for a holistic view of an individual's functioning.
+* **Bar-On's Emotional-Social Intelligence (ESI) Model:** Integrates emotional and social dimensions, including stress management and adaptability, for a holistic view of an individual's functioning.
 
 
 
-The Six Seconds Model: Provides a practical framework for applying emotional intelligence in real-world scenarios and everyday life.
+* **The Six Seconds Model:** Provides a practical framework for applying emotional intelligence in real-world scenarios and everyday life.
 
 
 
-Plutchik's Wheel of Emotions: Offers a detailed classification of emotions and their relationships, aiding the system in navigating complex emotional states.
+* **Plutchik's Wheel of Emotions:** Offers a detailed classification of emotions and their relationships, aiding the system in navigating complex emotional states.
 
 
-⚙️ System Architecture & Technology Stack
+## ⚙️ System Architecture & Technology Stack
+
 The application is built with three core modules that work together to deliver a seamless experience.
 
 
-Facial Recognition and Emotion Detection Module: Captures the video feed using OpenCV and leverages MediaPipe and a Convolutional Neural Network (CNN) via the DeepFace library to identify facial landmarks and classify emotions.
+* **Facial Recognition and Emotion Detection Module:** Captures the video feed using OpenCV and leverages MediaPipe and a Convolutional Neural Network (CNN) via the DeepFace library to identify facial landmarks and classify emotions.
 
 
 
-Adaptive Questioning Module: The detected emotion is passed to a decision-making algorithm that prompts a GPT-2 model to generate a relevant question.
+* **Adaptive Questioning Module:** The detected emotion is passed to a decision-making algorithm that prompts a GPT-2 model to generate a relevant question.
 
 
-Data Fusion and Personality Matrix Module: User responses and emotion data are synthesized. An algorithm calculates scores for various EI dimensions, which are then used to generate the final report and visualizations.
+* **Data Fusion and Personality Matrix Module:** User responses and emotion data are synthesized. An algorithm calculates scores for various EI dimensions, which are then used to generate the final report and visualizations.
 
-Technology Stack
-Programming Language: Python
+### Technology Stack
 
-Core Libraries:
+* Programming Language: Python
 
-streamlit: For the web application interface.
+* Core Libraries:
 
-opencv-python: For capturing webcam video feed.
+  * streamlit: For the web application interface.
 
-deepface: For the core emotion analysis.
+  * opencv-python: For capturing webcam video feed.
 
-transformers: For accessing the GPT-2 model for question generation.
+  * deepface: For the core emotion analysis.
 
-tensorflow: As a backend for the DeepFace library.
+  * transformers: For accessing the GPT-2 model for question generation.
 
-matplotlib: For creating the EQ radar and pie charts.
+  * tensorflow: As a backend for the DeepFace library.
 
-numpy: For numerical operations.
+  * matplotlib: For creating the EQ radar and pie charts.
 
-🚀 Installation and Setup
+  * numpy: For numerical operations.
+
+## 🚀 Installation and Setup
+
 To run this project locally, follow these steps:
 
-1. Clone the repository:
+### 1. Clone the repository:
 
-Bash
 
-git clone https://github.com/YashSingh23/Your-Repository-Name.git
-cd Your-Repository-Name
-2. Create and activate a virtual environment:
+``` git clone https://github.com/YashSingh23/Emotional-Intelligence-Matrix.git ```
+
+``` cd Emotional-Intelligence-Matrix ```
+
+### 2. Create and activate a virtual environment:
 
 Windows:
 
-Bash
 
-python -m venv venv
-.\venv\Scripts\activate
-macOS/Linux:
+``` python -m venv venv.\venv\Scripts\activate ```
 
-Bash
+macOS/Linux: 
 
-python3 -m venv venv
-source venv/bin/activate
-3. Install the required packages:
-Create a requirements.txt file with the following content:
 
-streamlit
-opencv-python
-deepface
-transformers
-torch
-tensorflow
-matplotlib
-numpy
+``` python3 -m venv venvsource venv/bin/activate ```
+
+
+### 3. Install the required packages:
+
+Create a ``` requirements.txt ``` file with the following content:
+
+* streamlit
+
+* opencv-python
+
+* deepface
+
+* transformers
+
+* torch
+
+* tensorflow
+
+* matplotlib
+
+* numpy
+
 Then, install the packages using pip:
 
-Bash
 
-pip install -r requirements.txt
-4. Run the Streamlit application:
+``` pip install -r requirements.txt ```
 
-Bash
+### 4. Run the Streamlit application:
 
-streamlit run app.py
+
+``` streamlit run main.py ```
+
 Your web browser should automatically open with the application running.
 
-📖 How to Use the Application
-Start the Session: Click the "Start Monitoring" button. Your browser will ask for permission to use your webcam. Please allow it.
+## 📖 How to Use the Application
 
-Emotion Detection: Position your face clearly in the camera view. The system will analyze your facial expression and detect your dominant emotion every few seconds.
+**1. Start the Session:** Click the "Start Monitoring" button. Your browser will ask for permission to use your webcam. Please allow it.
 
-Answer the Questions: Based on the detected emotion, a question will appear. Type your thoughtful response in the text box and click "Submit Answer".
+**2. Emotion Detection:** Position your face clearly in the camera view. The system will analyze your facial expression and detect your dominant emotion every few seconds.
 
-Continue the Process: The system will resume monitoring after you submit your answer. This cycle will repeat.
+**3. Answer the Questions:** Based on the detected emotion, a question will appear. Type your thoughtful response in the text box and click "Submit Answer".
 
-View Your Report: When you are finished, click the "Stop Monitoring" button. The session will end, and a comprehensive EQ analysis report will be displayed.
+**4 Continue the Process:** The system will resume monitoring after you submit your answer. This cycle will repeat.
 
-✍️ Authors and Contributors
-This project is based on the research conducted by the following individuals at the Apex Institute of Technology (CSE), Chandigarh University:
+**5. View Your Report:** When you are finished, click the "Stop Monitoring" button. The session will end, and a comprehensive EQ analysis report will be displayed.
 
+## ✍️ Author
 
-
-
-
-
-Tushar Gupta 
-
-
-Animesh Upadhyay 
+This project is based on the research conducted in the Apex Institute of Technology (CSE), Chandigarh University:
 
 
 Yash Singh 
-
-
-Puneet 
-
-
-Jatin 
